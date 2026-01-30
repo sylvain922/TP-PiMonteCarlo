@@ -1,4 +1,4 @@
-# README.md - Monte Carlo Pi (Parallélisme Java)
+# README.md - Monte Carlo Pi (Parallélisme)
 
 ## Principe
 
@@ -8,13 +8,13 @@ On estime π en lançant des millions de points aléatoires dans un carré : ceu
 
 ### Assignment102 (Runnable)
 
-- On lance plein de petites tâches qui comptent dans une **"boîte partagée"** (AtomicInteger).
+- On lance plein de petites tâches qui comptent dans une "boîte partagée" (AtomicInteger).
 - Les tâches ne renvoient rien, elles mettent juste à jour le total commun.
 
 
 ### Pi (Callable)
 
-- Chaque tâche fait son calcul toute seule et **renvoie son résultat**.
+- Chaque tâche fait son calcul toute seule et renvoie son résultat.
 - À la fin, on additionne tous les résultats.
 
 
@@ -27,12 +27,12 @@ On estime π en lançant des millions de points aléatoires dans un carré : ceu
 
 **Monte Carlo = parfait pour multi-cœurs** : chaque tâche indépendante, efficacité >90% jusqu'à 16-32 cœurs.
 
-## Tests de vitesse faits sur mon ordinateur
+## Tests de vitesse
 
 ```
 Callable (Pi)     : 34ms
 Runnable (Assign) : 33ms
-→ Performances égales.
+→ Performances égales
 ```
 
 ## Conclusion
@@ -41,7 +41,6 @@ Runnable (Assign) : 33ms
 
 **Runnable (Assignment102)** pour la vitesse pure (gros calculs). Il répartit mieux le travail automatiquement.
 
-En conclusion, je conseille l'implémentation Pi car c’est plus propre (chaque tâche = son résultat). C’est plus facile à tester et ça gère les erreurs. Pour de la vitesse pure on choisira plutôt Assignment102
 
 
 
