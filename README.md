@@ -1,4 +1,4 @@
-# README.md - Monte Carlo Pi (Parallélisme)
+# Monte Carlo Pi (Parallélisme)
 
 ## Principe
 
