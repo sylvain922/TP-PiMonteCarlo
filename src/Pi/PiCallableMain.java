@@ -6,7 +6,7 @@ package Pi;
 public class PiCallableMain {
 
     public static void main(String[] args) throws Exception {
-        long total = new PiMaster().doRun(50_000, 10);
+        long total = new PiMaster().doRun(312500, 16);
         System.out.println("total from Master = " + total);
     }
 }

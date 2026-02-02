@@ -6,7 +6,7 @@ package Pi;
 public class Assignment102 {
 
     public static void main(String[] args) {
-        PiMonteCarlo piVal = new PiMonteCarlo(100_000);
+        PiMonteCarlo piVal = new PiMonteCarlo(100000);
         long startTime = System.currentTimeMillis();
         double value = piVal.getPi();
         long stopTime = System.currentTimeMillis();
